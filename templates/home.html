@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Intruder Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class = "navi">
+            <a href="{{ url_for('home') }}"><li>Home</li></a>
+            <a href="{{ url_for('predict_page') }}"><li>Predict Intruders</li></a>
+        </ul>
+    </nav>
+    <h1 class="title">
+        Drone Intruder Detection
+    </h1>
+    <div class = "about">
+        <h2  class= "about2t">What is Drone???</h2>
+        <p class= "about2">A drone, also known as an unmanned aerial vehicle (UAV), 
+           is an aircraft that operates without a human pilot onboard.
+           It can be controlled either autonomously by computers or remotely by a human operator on the ground1.
+           Drones come in a variety of shapes and sizes, from small handheld devices to larger,
+           more sophisticated aircraft1.</p>
+    </div>
+
+    <div class ="useful">
+        <h2 class= "useful2h">How It's Useful in Intruder Detection</h2>
+        
+        <h4 class="rtl">1. Aerial Surveillance:</h4>
+
+        <p class="rtl">Drones offer an overhead perspective of the environment, 
+            enabling quick and effective coverage of vast areas. They can fly 
+            over restricted or sensitive areas to keep an eye out for 
+            any unauthorized entry or unusual activities. The live video streams 
+            from the drone’s cameras enable security staff to promptly
+            identify any trespassers.</p>
+        
+        <h4 class="rtl">2. Rapid Deployment:</h4>
+        <p class ="rtl">In emergency situations or potential intrusions, drones can be swiftly put into action.
+           Unlike security personnel on the ground, drones have the advantage of 
+           quickly reaching locations that are remote or difficult to access.</p>
+        
+    </div>
+
+    <div class="methods">
+        <h2 class="meth">Methodology Use</h2>
+        <p class="para">The Methodology uses in the Intruder Detection is Deep Learning Specifically CNN.The CNN model was designed with multiple layers to 
+            capture the complex patterns in the Intruder data. The model was trained on a large dataset of Intruder images and their 
+            corresponding classifications. </p>
+    </div>
+    <div class ="data">
+        <button id="btn", onclick="showImages()">Show Data Set Images</button>
+        
+        <div id="imageContainer" style="display: none;">
+            <div>
+                <img src="{{ url_for('static', filename='images/img1.jpg') }}" class="dataset-image" alt="Five Enemy" onclick="showName('Five Enemy', name1)">
+                <span id="name1"></span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/img2.jpg') }}" class="dataset-image" alt="Three Enemy" onclick="showName('Three Enemy', name2)">
+                <span id="name2"></span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/img3.jpg') }}"class="dataset-image" alt="Two Enemy" onclick="showName('Two Enemy', name3)">
+                <span id="name3"></span>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/img4.jpg') }}" class="dataset-image" alt="Four Enemy" onclick="showName('Four Enemy', name4)">
+                <span id="name4"></span>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

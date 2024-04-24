@@ -1,0 +1,150 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    background-color: #F7DED0;
+}
+.navi{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2rem;
+
+    padding: 20px 50px 10px 0px;
+    font-weight: bold;
+    background-color: #F7DED0;
+    margin: 0%;
+}
+.navi a{
+    text-decoration: none;
+    color: inherit;
+}
+ul li:hover{
+    opacity: 0.7;
+    font-size: 20px;
+}
+.title{
+    font-size:  3em;
+    text-align: center;
+    padding: 20px;
+}
+.about2t{
+    padding-left: 50px;
+    width:270px;
+    border-right: 4px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+     typing 6s steps(30),
+     cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    90% {border-color: transparent;}
+}
+@keyframes typing {
+    from{width:  0;}
+}
+.about2{
+    padding-left: 50px;
+    width:1000px;
+}
+.useful2h{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+}
+.rtl{
+   padding-left: 30px;
+}
+.meth{
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+.para{
+    padding: 0px 20px 0px 20px;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#btn{
+    height: 50px;
+    width: 120px;
+    background-color:rgb(34, 77, 197);
+    border-radius: 20px;
+    box-shadow: none;
+    font-family: monospace;
+    color: whitesmoke;
+}
+#btn:hover{
+    opacity: 0.6;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#drop-area{
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#img-view{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-family: monospace;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+    background-position: center;
+    background-size: cover;
+}
+
+#img-view img{
+    width: 100px;
+    margin-top: 25px;
+}
+
+#img-view span{
+    display: block;
+    font-size: 15px;
+    color: #777;
+    margin-top: 25px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#result{
+    margin-top: 20px;
+    color: inherit;
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.dataset-image {
+    width: 300px;
+    height: 300px;
+}
+
+#imageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
