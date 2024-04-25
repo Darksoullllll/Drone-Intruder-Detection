@@ -32,7 +32,7 @@ def upload():
     if image_file.filename == '':
         return jsonify({'error': 'No selected file'})
 
-    img = Image.open(io.BytesIO(image_file.read()))
+    img = Image.open(image_file)
     converted_img = convert_into_pixel(img)
 
     prediction = model.predict(np.expand_dims(converted_img, axis=0))
