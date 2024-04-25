@@ -2,5 +2,4 @@ Flask
 Tensorflow
 Numpy
 Image
-Io
 Gunicorn
